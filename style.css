@@ -1,0 +1,252 @@
+/* GENERAL */
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid rgba(0, 0, 255, 0.2);
+  transition: all .2s ease-in;
+}
+
+a:hover {
+  border-bottom: 1px solid #1b4d80;
+}
+
+h1,h2,h3 {
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* GLOBAL */
+
+.colorAccent {
+  color: #1b4d80;
+}
+
+/* MENU */
+
+nav {
+  border-bottom: 1px solid #CCCBCB;
+}
+.menu {
+  max-width: 60rem;
+  display: flex;
+  margin: 0 auto;
+}
+.menu-items {
+  list-style-type: none;
+  flex: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  display: inline-block;
+  margin: 1.5rem 1rem;
+}
+
+.logo {
+  padding: 1.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.logo a {
+  border-bottom: none;
+}
+
+.logo a:hover {
+  color: #1b4d80;
+  border-bottom: none;
+}
+
+/* DESCRIPTION + FORM TEXT*/
+
+.description, .form-text, .work-introduction, .fail-introduction, article {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 10rem 2rem 1rem;
+/*  border-right: 1px solid #CCCBCB; */
+  border-bottom: 1px solid #CCCBCB;
+}
+
+.about-introduction {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 10rem 2rem 1rem;
+  /*  border-right: 1px solid #CCCBCB; */
+}
+
+.description p, .work-introduction p, .fail-introduction, .about-introduction {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-text p, .form-text input {
+  font-size: 2rem;
+}
+
+.form-text input {
+  color: #1b4d80;
+  border: none;
+}
+.form-text input::placeholder {
+  color: blue;
+  font-size: 1.5rem;
+}
+
+.form-text input[type=submit] {
+  color: #1b4d80;
+  background-color: white;
+  font-weight: bold;
+}
+
+/* ABOUT */
+
+.about {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 10rem 2rem 1rem;
+/*  border-right: 1px solid #CCCBCB; */
+}
+
+.about p {
+  font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem 0rem;
+  max-width: none;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: .7rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #CCCBCB;
+}
+
+.social-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-items li {
+  display: inline-block;
+  margin: 1.5rem .5rem;
+}
+
+/* WORK/PORTFOLIO */
+
+.work {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+/*  border-right: 1px solid #CCCBCB; */
+}
+.work h2 {
+  margin-left: 1rem;
+}
+
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  flex: 1;
+  padding: 2rem;
+}
+
+.gallery:hover {
+  transform: scale(1.0001);
+}
+
+.work-titel {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5rem 0rem;
+}
+
+.work-year {
+  font-style: italic;
+  color: grey;
+}
+
+.desc {
+    padding: .5rem 0rem;
+}
+
+/* ARTICLE */
+
+.article-titel {
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #CCCBCB;
+}
+
+.article-intro {
+  padding: 1rem 0;
+}
+
+.article-top-pic {
+  padding: 1rem 0;
+}
+
+.article-text-pic {
+
+  padding: 1rem 0;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.article-text p {
+  padding: 0 0 1rem 0;
+}
+
+/* FEDT */
+
+@media screen and (max-width: 40rem) {
+  .menu {
+    padding: 1rem 0;
+  }
+  .menu-items li {
+    width: 100%;
+    margin: .5rem 1rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+  .description, .form-text, .work-introduction, .fail-introduction, .about-introduction, article {
+    padding: 1rem;
+  }
+  .about {
+    padding: 1rem;
+  }
+  }
+
+}
