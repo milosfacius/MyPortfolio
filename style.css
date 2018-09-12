@@ -13,7 +13,7 @@ html, body {
   box-sizing: border-box;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
@@ -35,14 +35,19 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: normal;
-  font-style: italic;
 }
 
 /* GLOBAL */
 
+.colorAccentMenu {
+  color: #1b4d80;
+  border-bottom: 1px solid #1b4d80;
+}
+
 .colorAccent {
   color: #1b4d80;
 }
+
 
 /* MENU */
 
@@ -83,12 +88,12 @@ nav {
 
 /* DESCRIPTION + FORM TEXT*/
 
-.description, .form-text, .work-introduction, .fail-introduction, article {
+.description, .form-text, .work-introduction, article {
   max-width: 60rem;
   margin: 0 auto;
   padding: 2rem 10rem 2rem 1rem;
-/*  border-right: 1px solid #CCCBCB; */
-  border-bottom: 1px solid #CCCBCB;
+  /*  border-right: 1px solid #CCCBCB; */
+  /* border-bottom: 1px solid #CCCBCB;*/
 }
 
 .about-introduction {
@@ -98,7 +103,7 @@ nav {
   /*  border-right: 1px solid #CCCBCB; */
 }
 
-.description p, .work-introduction p, .fail-introduction, .about-introduction {
+.description p, .work-introduction p, .about-introduction {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -122,13 +127,21 @@ nav {
   font-weight: bold;
 }
 
+.intro-image   {
+  display: block;
+  margin: 0 auto;
+  max-width: 58rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid #CCCBCB;
+}
+
 /* ABOUT */
 
 .about {
   max-width: 60rem;
   margin: 0 auto;
   padding: 2rem 10rem 2rem 1rem;
-/*  border-right: 1px solid #CCCBCB; */
+  /*  border-right: 1px solid #CCCBCB; */
 }
 
 .about p {
@@ -164,7 +177,7 @@ footer {
   max-width: 60rem;
   margin: 0 auto;
   padding: 2rem 0;
-/*  border-right: 1px solid #CCCBCB; */
+  /*  border-right: 1px solid #CCCBCB; */
 }
 .work h2 {
   margin-left: 1rem;
@@ -196,7 +209,7 @@ footer {
 }
 
 .desc {
-    padding: .5rem 0rem;
+  padding: .5rem 0rem;
 }
 
 /* ARTICLE */
@@ -205,8 +218,12 @@ footer {
   padding: 0 0 1rem 0;
   border-bottom: 1px solid #CCCBCB;
 }
+.article-titel h1, h2{
+  text-align: center;
+}
 
 .article-intro {
+
   padding: 1rem 0;
 }
 
@@ -219,11 +236,14 @@ footer {
   padding: 1rem 0;
   display: block;
   margin: 0 auto;
+}
 
+.article-text {
+  border-bottom: 1px solid #CCCBCB;
 }
 
 .article-text p {
-  padding: 0 0 1rem 0;
+  padding: 0 5rem 0 5rem;
 }
 
 /* FEDT */
@@ -241,12 +261,12 @@ footer {
     align-items: center;
     text-align: right;
   }
-  .description, .form-text, .work-introduction, .fail-introduction, .about-introduction, article {
+  .description, .form-text, .work-introduction, .about-introduction, article {
     padding: 1rem;
   }
   .about {
     padding: 1rem;
   }
-  }
+}
 
 }
