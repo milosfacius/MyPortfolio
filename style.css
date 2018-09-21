@@ -163,30 +163,6 @@ nav {
   padding: 0 0 2rem 0;
 }
 
-
-/************************** FOOTER +**************************/
-footer {
-  padding: 2rem 0rem;
-  max-width: none;
-  margin: 0 auto;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: .7rem;
-  padding-bottom: 3rem;
-  border-top: 1px solid #CCCBCB;
-}
-
-.social-items {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.social-items li {
-  display: inline-block;
-  margin: 1.5rem .5rem;
-}
-
 /************************** WORK/PORTFOLIO **************************/
 
 .work {
@@ -252,14 +228,17 @@ footer {
 }
 
 .article-text-pic {
-
-  padding: 1rem 0;
+  padding: 0rem 9rem 0rem 9rem;;
   display: block;
   margin: 0 auto;
 }
 
 .article-text p {
   padding: 0 0 0 9rem;
+}
+
+.article-text h3 {
+  color: #185d1e;
 }
 
 /*************************  CV *************************/
@@ -329,9 +308,35 @@ footer {
   font-weight: lighter;
 }
 
+
+
+/************************** FOOTER +**************************/
+footer {
+  padding: 2rem 0rem;
+  max-width: none;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(0, 0, 0);
+  font-size: .7rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #CCCBCB;
+  background-color: rgba(250, 250, 250);
+}
+
+.social-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-items li {
+  display: inline-block;
+  margin: 1.5rem .5rem;
+}
+
 /*************************  RESPONSIVE *************************/
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 62.5rem) {
 
   body {
     padding: 1rem 1rem 1rem 1rem;
@@ -360,6 +365,7 @@ footer {
     max-width: 60rem;
     padding: 0;
   }
+
   .cv-text h2 {
     padding: 0;
   }
@@ -373,6 +379,11 @@ footer {
   }
   .article-text p {
     padding: 0;
+  }
+  .article-text-pic {
+    padding: 2rem;
+    display: block;
+    margin: 0 auto;
   }
   .work-grid {
     display:block;
