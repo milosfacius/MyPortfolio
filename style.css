@@ -197,10 +197,11 @@ nav {
 .gallery {
   flex: 1;
   padding: 1rem;
+
 }
 
 .gallery:hover {
-  transform: scale(1.1);
+  opacity: 0.6;
 }
 
 .work-titel {
@@ -220,7 +221,6 @@ nav {
 /*************************  ARTICLE *************************/
 
 .article-titel {
-  padding: 0 0 1rem 0;
   border-bottom: 1px solid #CCCBCB;
 }
 .article-titel h1, h2{
@@ -243,10 +243,6 @@ nav {
 
 .article-intro h3 {
   padding: 0 0 0 9rem;
-}
-
-.article-top-pic {
-  padding: 1rem 0;
 }
 
 .article-text-pic {
@@ -353,7 +349,7 @@ footer {
 
 /*************************  RESPONSIVE *************************/
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 40rem) {
 
   body {
     padding: 1rem;
