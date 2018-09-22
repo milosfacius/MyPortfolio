@@ -13,6 +13,11 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+section {
+  display: block;
+  padding-bottom: 2rem;
+}
 img {
   max-width: 100%;
 }
@@ -48,6 +53,7 @@ h3 {
 
 p {
   font-weight: lighter;
+  font-size: 1rem;
 }
 
 /************************** GLOBAL **************************/
@@ -119,7 +125,7 @@ nav {
 }
 
 .description p, .work-introduction p, .about-introduction p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: lighter;
 }
 
@@ -221,8 +227,10 @@ nav {
   text-align: left;
 }
 
-.article-titel p {
-  font-size: 2rem;
+.article-titel p{
+  font-style: italic;
+  color: grey;
+  font-size: 1.5rem;
 }
 
 .article-intro {
@@ -251,11 +259,8 @@ nav {
   padding: 0 0 0 9rem;
 }
 
-.article-text p {
-}
-
 .article-text h2 {
-  margin: 0 0 0 -140px;
+  margin-left: -9rem;
 }
 
 /*************************  CV *************************/
@@ -270,13 +275,13 @@ nav {
 .cv-profilepic img {
   float: left;
   display: block;
-  margin: 0 0 0 -140px;
+  margin-left: -9rem;
   max-width: none;
   border-radius: 50%;
 }
 
 .cv-text h2 {
-  margin: 0 0 0 -140px;
+  margin-left: -9rem;
   padding: 20px 0 0 0;
   color: #185d1e;
 }
@@ -297,13 +302,11 @@ nav {
 .cv-introduction a {
   color: #185d1e;
   text-decoration: underline;
-
 }
 
 .cv-profilepic img {
   max-width: 130px;
   max-height: 140px;
-
 }
 
 /************************* CONTACT *************************/
@@ -311,7 +314,7 @@ nav {
 .contact {
   max-width: 60rem;
   margin: 0 auto;
-  padding: 0 0 2rem 1rem;
+  padding: 0 0 2rem 0;
 }
 
 .contact h1 {
@@ -321,11 +324,8 @@ nav {
 }
 
 .contact p {
-  font-size: 2rem;
   font-weight: lighter;
 }
-
-
 
 /************************** FOOTER +**************************/
 footer {
@@ -353,15 +353,12 @@ footer {
 
 /*************************  RESPONSIVE *************************/
 
-@media screen and (max-width: 62.5rem) {
+@media screen and (max-width: 30rem) {
 
   body {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
   }
-  .menu-items li {
-    width: 100%;
-    margin: 0 0 1rem 0;
-  }
+
   .logo {
     display: flex;
     align-items: center;
@@ -387,13 +384,26 @@ footer {
     padding: 0;
   }
 
-  .cv-text p, h3 {
-    margin-left: -140px;
+  .about-introduction h3 {
+    margin: 0px 0px 10px 0px;
   }
 
-  .article-text h3 {
-    margin-left: 0;
+  .work-introduction h3 {
+    margin: 0px;
   }
+
+  .article-titel h3 {
+    margin: 0px;
+  }
+
+  .contact h3 {
+    margin: 0px;
+  }
+
+  .cv-text p, h3 {
+    margin-left: -9rem;
+  }
+
   .article-text p {
     padding: 0;
   }
@@ -407,7 +417,7 @@ footer {
   }
 
   .gallery {
-    padding: 0;
+    padding: 1rem;
   }
 
   .skills {
@@ -419,4 +429,15 @@ footer {
     padding-right: 0;
   }
 
+  .menu-items li {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 61rem) {
+
+  body {
+    padding: 1rem 1rem 1rem 1rem;
+  }
 }
