@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <meta property="og:title" content="My portfolio">
-  <meta name="description" property="og:description" content="Hey, I’m a digital design student and I'm looking for a job!.">
+  <meta name="description" property="og:description" content="Milos Facius - UX Designer">
   <meta property="og:url" content="https://milosfacius.github.io/myportfolio/">
   <meta property="og:image" content="images/logo.png">
   <meta property="og:image:alt" content="Logo">
@@ -35,139 +35,109 @@
     </div>
   </nav>
 
-  <article>
-
-    <!--************************ Article title ************************-->
-
-    <div class="article-titel">
-      <h1>game design</h1>
-      <p>spaces of innovation · mockup · prototyping · user scenarios</p>
-      <h3> API-based concept and app design for offering art experiences outside the walls of the museum.</h3>
-      <div class="article-top-pic">
-        <img src="images/work/programming/programming-case.jpg" alt="Top picture">
-      </div>
-      
-    </div>
-
-    <!--************************ Article intro ************************-->
-
-    <div class="article-intro">
 
 
-      <h2>challenge</h2>
-      <p>XXXX</p>
-
-      <h2>solution</h2>
-      <p> XXXX
-        <br><br>
-        XXXX</p>
-
-        <h2>product</h2>
-        <p> <a href="https://sjwinther.github.io/wwlfdmd/index.html" target="_blank"> <span class="colorAccent">XXXX </span></a></p>
-      </div>
-    </div>
-
-    <!--************************ Article tools ************************-->
-
-    <div class="article-text">
-
-      <h2>spaces of innovation</h2>
-      <p>xxxx
-        <br> <br>
-        xxxx
-      </p>
-
-      <div class="article-text-pic">
-        <img src="images/work/WWLFDMD/interview.jpg" alt="user interviews">
+  <!--************************ Article title ************************-->
+  <section>
+    <article>
+      <div class="article-titel">
+        <h1>game design</h1>
+        <p>spaces of innovation · mockup · prototyping · user scenarios</p>
+        <h3> A game design which draws inspiration from the retro game "Combat" for the Atari 2600.</h3>
+        <div class="article-top-pic">
+          <img src="images/work/programming/programming-case.jpg" alt="Top picture">
+        </div>
       </div>
 
-      <h2> wireframes</h2>
-      <p>xxxx
-        <br>
-        xxxx
-        <br><br>
-        xxxx
-      </p>
-      <div class="article-text-pic">
-        <img src="images/work/WWLFDMD/wireframing.jpg" alt="wireframes">
+      <!--************************ Article intro ************************-->
+
+      <div class="article-intro">
+
+        <h2>challenge</h2>
+        <p>Design and implement a game that is inspired by 2D retro gaming, such as
+          Silkworms, Xenon 2 or super Cars 2. Important factors included correspondence of
+          game concept with implementation, smoothness of integration of game features with
+          each other, and appropriateness and elegance of implementation. The game should be
+          reasonably challenging to play, with game features such as starting a game, winning/losing,
+          restart, score and five levels which are functionally different. The game should also include
+          various kinds of opponents or enemies which are functionally different and implement basic enemy behaviour.</p>
+
+          <h2>solution</h2>
+          <p> Pocket Tanks is a 2-player-arena game, in which the players battle to earn the highest score by destroying each other.
+            The players each control a tank, that has the ability to shoot bullets, in order to try and hit the opponent.
+            It has a tennis-style layout, in which the players aren’t able to cross the middle part of the arena. Progress equals higher difficulty.
+            <br><br>
+          </p>
+        </div>
+
+        <!--************************ Article tools ************************-->
+
+        <div class="article-text">
+
+          <h2>product</h2>
+          <p> Pocket Tanks is written from scratch by me. The game isn't online and thus can't be played from a browser.
+            <div class="article-text-pic">
+              <img src="images/work/programming/programming.jpg" alt="wireframes">
+            </div>
+
+          <h2> levels</h2>
+          <p>The game holds 5 levels, where each level is changing the environment of the game. First level is gladiator-like empty,
+            where the players are facing each other dead-on. When a player hits 0 lives, the next level is entered, where a new arena
+            is presented, in which either obstacles to hide behind or interfering enemies show up - maybe both!
+            <br> <br>
+            xxxx
+          </p>
+
+          <div class="article-text-pic">
+            <img src="images/work/programming/level.jpg" alt="user interviews">
+          </div>
+
+          <h2> osbtacle collision </h2>
+          <p>Every bullet that hits the opposite player awards 1 point. In order to prevent spawn camping, the player that was hit,
+            will turn invincible for 5 seconds, but unable to shoot for the time being.
+            <br><br>
+            It is important to try and avoid the enemies, as this will decrease the player’s life by 1 -
+            but this won’t award any points to the opposite player. One might think, that a strategy could be to suicide to the enemies,
+            if you are in front, but as every level progression awards the winning player with 5 points, the lost points to the other player
+            from the suicides will do you no good!
+          </p>
+          <div class="article-text-pic">
+            <img src="images/work/programming/hit.jpg" alt="wireframes">
+          </div>
+
+          <h2> bullet movement</h2>
+          <p>The obstacles doesn’t have bullet penetration, so the players are able to seek cover,
+            but remember: bonus points is awarded for finishing the game within 100 seconds, 1 for each
+            second < 100, so don’t take too long hiding behind obstacles!
+          </p>
+          <div class="article-text-pic">
+            <img src="images/work/programming/bullet.jpg" alt="Product">
+          </div>
+
+          <h2>tools</h2>
+          <p> Processing, Java, Photoshop</p>
+        </div>
+      </article>
+    </secition>
+
+    <!--************************ Footer ************************-->
+
+    <footer>
+      <div class="social">
+        <ul class="social-items">
+          <li>
+            <a href="https://www.linkedin.com/in/milos-facius/" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="tel:+4528298058">+45 28 29 80 58</a>
+          </li>
+          <li>
+            <a href="mailto:milosfacius@gmail.com">Email</a>
+          </li>
+        </ul>
       </div>
+      <span class="colorAccent">Milos Facius – 2018</span>
+    </footer>
 
-      <h2>brainstorming</h2>
-      <p>xxxx
-        <br><br>
-        xxxx
-      </p>
-      <div class="article-text-pic">
-        <img src="images/work/WWLFDMD/wwlfdmd-sketching.jpg" alt="Product">
-      </div>
-
-      <h2>prototyping and testing</h2>
-      <p>xxxx
-        <br> <br>
-        xxxx
-      </p>
-      <div class="article-text-pic">
-        <img src="images/work/WWLFDMD/Userbility test smartphone.jpg" alt="Product">
-      </div>
-      <h2>tools</h2>
-      <p> xxxx</p>
-    </div>
-  </article>
-
-
-  <!--************************ OTHER WORK ************************-->
-
-  <section class="work">
-
-    <h2>other projects</h2>
-    <div class="work-grid">
-
-      <div class="gallery">
-        <a href="work-ember.html">
-          <img src="images/smk-1.jpg" alt="Ember">
-          <div class="work-titel">xxxx</div>
-          <div class="work-year">xxxx</div>
-          <div class="desc">xxxx</div>
-        </a>
-      </div>
-      <div class="gallery">
-        <a href="work-informed.html">
-          <img src="images/book-1.jpg" alt="xxxx">
-          <div class="work-titel">xxxx</div>
-          <div class="work-year">xxxx</div>
-          <div class="desc">xxxx</div>
-        </a>
-      </div>
-      <div class="gallery">
-        <a href="work-dr.html">
-          <img src="images/programming-1.jpg" alt="xxxx">
-          <div class="work-titel">xxxx</div>
-          <div class="work-year">xxxx</div>
-          <div class="desc">xxxx</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!--************************ Footer ************************-->
-
-  <footer>
-    <div class="social">
-      <ul class="social-items">
-        <li>
-          <a href="https://www.linkedin.com/in/milos-facius/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="tel:+4528298058">+45 28 29 80 58</a>
-        </li>
-        <li>
-          <a href="mailto:milosfacius@gmail.com">Email</a>
-        </li>
-      </ul>
-    </div>
-    <span class="colorAccent">Milos Facius – 2018</span>
-  </footer>
-
-</body>
-</html>
+  </body>
+  </html>

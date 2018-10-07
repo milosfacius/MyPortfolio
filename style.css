@@ -70,6 +70,101 @@ p {
   color: #808080;
 }
 
+/************************** BUTTON **************************/
+
+html {
+
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+
+*:before,
+*:after {
+  z-index: -1;
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-5 {
+  color: #ababab;
+
+}
+.btn-5:after {
+  content: '';
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(360deg);
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: transparent #ababab transparent transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-5:before {
+  content: '';
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(360deg);
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: transparent transparent transparent #ababab;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.btn-5:before, .btn-5:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0 solid;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.btn-5:before {
+  bottom: 0;
+  left: 0;
+  border-color: transparent transparent transparent #ababab;
+}
+.btn-5:after {
+  top: 0;
+  right: 0;
+  border-color: transparent #ababab transparent transparent;
+}
+.btn-5:hover {
+  color: white;
+}
+.btn-5:hover:before, .btn-5:hover:after {
+  border-width: 80px 262.5px;
+}
+
+body a.btn-5 {
+  text-decoration: none;
+  line-height: 80px;
+  text-align: center;
+  font-weight: lighter;
+  max-width: 16rem;
+}
+
+body a.btn-5:hover {
+  border-bottom: 1px solid white;
+}
+
 /************************** MENU **************************/
 
 nav {
@@ -187,13 +282,15 @@ nav {
 }
 
 .gallery {
+  margin: 0.5rem;
   padding: 1rem;
   flex: 1;
+  background-color: #f5f5f5;
 
 }
 
 .gallery:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .work-titel {
@@ -215,8 +312,10 @@ nav {
 .article-titel {
   border-bottom: 1px solid #CCCBCB;
 }
-.article-titel h1, h2{
+.article-titel h1{
   text-align: left;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 .article-titel p{
@@ -234,6 +333,10 @@ nav {
   padding: 0 0 0 9rem;
 }
 
+.article-intro a {
+  text-decoration: underline;
+}
+
 .article-intro h3 {
   padding: 0 0 0 9rem;
 }
@@ -243,8 +346,16 @@ nav {
   margin: auto;
 }
 
+.product-pic {
+  padding: 7rem;
+}
+
 .article-text {
   padding: 0 0 0 9rem;
+}
+
+.article-text a {
+  text-decoration: underline;
 }
 
 .article-text h2 {
@@ -328,7 +439,7 @@ footer {
   font-size: .7rem;
   padding-bottom: 3rem;
   border-top: 1px solid #CCCBCB;
-  background-color: rgba(250, 250, 250);
+  background-color: #f5f5f5;
 }
 
 .social-items {
@@ -412,6 +523,11 @@ footer {
     display: block;
     margin: 0 auto;
   }
+
+  body  .product-pic {
+    padding: 0;
+  }
+
   .work-grid {
     display:block;
   }
@@ -439,6 +555,10 @@ footer {
 
   section {
     padding: 1rem;
+  }
+
+  .product-pic {
+    padding: 3rem;
   }
 
   .menu {
